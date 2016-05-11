@@ -1,0 +1,40 @@
+
+<h1> Burger App</h1>
+<div>
+<ul id="left" > 	
+  {{#each dataFalse}}
+	
+		<li>{{this.id}}. {{this.burger_name}}
+
+		<form method="POST" action="/change?_method=PUT" class="button-size">
+		
+		<button  type="submit" name={{this.id}}>Devour It!</button>
+	</form>
+
+
+
+
+		</li>
+	
+  {{/each}} 
+ </ul> 
+</div>
+
+<div>
+<ul id="right">
+  {{#each dataTrue}}
+	
+		<li>{{id}}. {{burger_name}}</li>
+	
+  {{/each}}
+
+</ul>
+</div>
+	
+<div id="input">
+	<form method="POST" action="/update?_method=PUT" class="button-size">
+		<textarea class="form-control" type="text" name="user_plan"></textarea>
+		<button type="submit">Submit</button>
+	</form>
+	
+</div>
