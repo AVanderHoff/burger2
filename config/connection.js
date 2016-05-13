@@ -1,6 +1,6 @@
 var keys = require('./keys.js');
 var Sequelize = require('sequelize');
-var source = keys.mySQLKeys;
+var source = keys.mySQLKeys.localhost;
 
 var sequelize = new Sequelize(source.database, source.user, source.password, {
   host: source.host,

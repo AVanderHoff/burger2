@@ -12,13 +12,13 @@ var Burger = sequelize.define("burgers_table", {
 		primaryKey: true
 	},
 	burger_name: {
-		type: Sequelize.STRING,
+		type: Sequelize.STRING
 	},
 	devoured: {
-		type: Sequelize.BOOLEAN,
+		type: Sequelize.BOOLEAN
 	},
 	date: {
-		type: Sequelize.DATE,
+		type: Sequelize.DATE
 	}
 
 
